@@ -101,7 +101,8 @@ textarea {
   width: fit-content;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   background-color: var(--button-primary);
   color: var(--color-primary);
   font-weight: 600;
@@ -113,7 +114,8 @@ input[type="submit"] {
   margin-top: 40px;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   cursor: pointer;
 }
 /* Form end */
