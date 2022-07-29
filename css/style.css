@@ -39,22 +39,6 @@ body {
   margin-top: 110px;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.justify-content-between {
-  justify-content: space-between;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
 .heading {
   font-weight: 600;
   font-size: 30px;
@@ -106,7 +90,6 @@ textarea {
 .checkbox-control {
   display: flex;
   gap: 10px;
-  /* align-items: center; */
   width: fit-content;
 }
 
