@@ -1,11 +1,11 @@
 :root {
-  --text-primary: #6e797e;
-  --text-secondary: #8b9497;
+  --text-primary: #404145;
+  --text-secondary: #7a7d85;
   --text-white: #ffe3f3;
   --font-primary: "Poppins", sans-serif;
   --color-primary: #fff;
   --color-secondary: #fdf5f5;
-  --color-background: #222222;
+  --color-background: #f7f7f7;
   --button-primary: #ff4584;
 }
 
@@ -31,12 +31,8 @@ body {
 .container {
   max-width: 1200px;
   margin: auto;
-  background-color: var(--color-primary);
-  box-shadow: rgba(203, 205, 207, 0.2) 0px 8px 24px;
-  border: 1px solid #e7e7e7;
-  display: flex;
-  padding: 40px;
-  margin-top: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .heading {
@@ -56,10 +52,18 @@ header {
   top: 0;
   width: 100%;
   border-bottom: 1px solid #e7e7e7;
+  box-shadow: rgba(153, 151, 151, 0.2) 0px 2px 8px 0px;
+}
+
+.form-section {
+  background-color: var(--color-primary);
+  border: 1px solid #e7e7e7;
+  padding: 40px;
+  margin-top: 110px;
 }
 
 form {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -129,12 +133,14 @@ footer {
   margin-top: 20px;
 }
 
-.footer-area {
-  width: 1200px;
-  margin: auto;
+footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+footer > h2 {
+  font-size: 15px;
 }
 
 .social-icons {
@@ -147,3 +153,59 @@ footer {
 }
 
 /*  Footer end  */
+
+/* ===================================== */
+/* responsive css start*/
+
+/* 'lg' applies to medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+  .container {
+    width: 800px;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+/* Tablet responsive start */
+/* 'md' applies to small device (landscape phones, loess then 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 700px;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .footer-area {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}
+/* Tablet responsive end */
+
+/* mobile responsive start */
+/* sm applies to x-small devices (portrait phones, less than 576px)  */
+@media (max-width: 576px) {
+  .container {
+    width: 520px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .footer-area {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}
+/* mobile responsive end */
